@@ -29,13 +29,21 @@ body.switch {
     min-width: 900px;
     margin: 1em auto;
     padding-top: 2em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#grid {
+    display: grid;
+    grid-column: 1fr 1fr;
 }
 
 header {
     margin: 0 auto 2em auto;
+    text-align: right;
 }
 
-#banner {
+/* #banner {
     position: relative;
     display: flex;
     width: 1100px;
@@ -52,11 +60,11 @@ header {
     background-color: #333;
     color: rgb(235, 235, 235);
     transition: all 2s;
-}
+} */
 
-main {
-    display: flex;
-    justify-content: space-evenly;
+/* main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     margin: 1em auto;
 }
 
@@ -65,7 +73,8 @@ main section {
     border: 1px rgb(235, 235, 235) dashed;
     margin: 0 .25em;
     padding: 1em;
-}
+    background-color: rgb(240, 248, 255, 50%);
+} */
 
 a {
     text-decoration: none;
@@ -78,7 +87,7 @@ nav ol, nav ul {
 }
 
 section li {
-    padding-left: 1.2em;
+    /* padding-left: 1.2em; */
 }
 
 section a {
@@ -125,4 +134,45 @@ button.switch {
 button.switch:hover {
     background-color: #333;
     color: rgb(235, 235, 235)
+}
+
+
+
+
+.el-messiri{
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.almendra-regular {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almendra-bold {
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.almendra-regular-italic {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.almendra-bold-italic {
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: italic;
 }
