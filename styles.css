@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, ul, a {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -11,110 +16,104 @@ img {
 
 /* Page styling */
 body {
-    background-color: #333;
+    /* background-color: #e6e3e3; */
+    background-color: #706d6d;
     color: rgb(235, 235, 235);
     transition: all 2s;
+    background-image: url(images/outsides.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center top; */
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background-image: url(images/insides.jpg);
+    /* color: #333; */
 }
 
 #container {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+    /* max-width: 1200px; */
     /* make sure the columns don't get too small and text stays readable */
     min-width: 900px;
     margin: 1em auto;
     padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
     display: flex;
+    justify-content: space-between;
+}
+
+#container.switch {
     flex-direction: row-reverse;
 }
 
 #grid {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 header {
     margin: 0 auto 2em auto;
     text-align: right;
+    background-color: rgba(90, 102, 116, 0.5);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-/* #banner {
-    position: relative;
-    display: flex;
-    width: 1100px;
-    height: 250px;
-    margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
-    overflow: hidden;
-    display: grid;
-	place-items: center;
+header.switch {
+    text-align: left; 
 }
 
-#banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
-} */
-
-/* main {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    margin: 1em auto;
+.tiles {
+    background-color: rgba(90, 102, 116, 0.5);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    min-width: 250px;
 }
 
-main section {
-    flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
-    padding: 1em;
-    background-color: rgb(240, 248, 255, 50%);
-} */
+.tiles.switch {
+    background-color: rgba(90, 102, 116, 0.5);
+}
 
 a {
     text-decoration: none;
 }
 
-nav ol, nav ul {
+nav ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-}
-
-section li {
-    /* padding-left: 1.2em; */
 }
 
 section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    color: rgb(255, 196, 0);
 }
 
 section a:hover {
-    background-color: orange;
+    background-color: rgb(255, 196, 0);
     color: #333;
 }
 
 section.switch a {
-    color: #333;
+    color: rgb(73, 62, 95);
 }
 
 section.switch a:hover {
-    background-color: #333;
+    background-color: rgb(116, 104, 143);
     color: rgb(235, 235, 235);
 }
 
 button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 200px;
+    right: 3em;
     padding: 12px;
     background-color: orange;
     color: #333;
@@ -137,42 +136,59 @@ button.switch:hover {
 }
 
 
+/* text */
 
+h1 {
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 5px;
+    /* color: rgb(85, 150, 211); */
+    color: rgb(255, 196, 0);
+}
+
+h1.switch {
+    /* color: rgb(86, 76, 110); */
+    color: rgb(116, 104, 143);
+}
+
+h2 {
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    /* color: rgb(41, 134, 221); */
+   color: rgb(194, 150, 7);
+}
+
+h2.switch {
+    color: rgb(47, 35, 77);
+}
+
+h3 {
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+a {
+    font-family: "Almendra", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
 
 .el-messiri{
   font-family: "El Messiri", sans-serif;
-  font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 
 .dancing-script{
   font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 
-.almendra-regular {
-  font-family: "Almendra", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.almendra-bold {
-  font-family: "Almendra", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.almendra-regular-italic {
-  font-family: "Almendra", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.almendra-bold-italic {
-  font-family: "Almendra", serif;
-  font-weight: 700;
-  font-style: italic;
-}
