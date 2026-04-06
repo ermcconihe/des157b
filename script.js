@@ -33,10 +33,6 @@
             for (const section of sections) {
                 section.removeAttribute('class');
             }
-            // for (const tile of tiles) {
-            //     tile.className = 'switch';
-            //     // section.className = '.tiles';
-            // }
             mode = 'outside'
         }
     })
