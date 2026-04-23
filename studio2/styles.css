@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#viewing-area {
+    /* gap: 20px; */
+}
+
+#selection-area {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+#info {
+    background-color: antiquewhite;
+    border-radius: 10px; 
+}
+
+.tiles {
+    /* height: 100px; */
+    width: 100px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}

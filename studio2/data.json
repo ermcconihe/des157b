@@ -1,0 +1,68 @@
+
+{
+    "img1": {
+        "date": "October 31, 2024",
+        "time": "7:46 am",
+        "temperature": "53 degrees",
+        "weather": "foggy/overcast",
+        "mood": "dreary"
+    },
+
+    "img2": {
+        "date": "March 13, 2025",
+        "time": "11:49 am",
+        "temperature": "54 degrees",
+        "weather": "partly cloudy",
+        "mood": "bright"
+    },
+
+    "img3": {
+        "date": "November 24, 2025",
+        "time": "1:45 pm",
+        "temperature": "50 degrees",
+        "weather": "sunny with some fog",
+        "mood": "crisp"
+    },
+
+    "img4": {
+        "date": "February 15, 2025",
+        "time": "3:17 pm",
+        "temperature": "47 degrees",
+        "weather": "rainy/sunny",
+        "mood": "refreshing"
+    },
+
+    "img5": {
+        "date": "January 19, 2026",
+        "time": "5:24 pm",
+        "temperature": "48 degrees",
+        "weather": "foggy",
+        "mood": "cozy"
+    },
+
+    "img6": {
+        "date": "March 12, 2025",
+        "time": "6:52 pm",
+        "temperature": "51 degrees",
+        "weather": "mostly cloudy",
+        "mood": "relaxing"
+    },
+
+    "img7": {
+        "date": "April 9, 2026",
+        "time": "7:33 pm",
+        "temperature": "73 degrees",
+        "weather": "partly cloudy",
+        "mood": "calm"
+    },
+
+    "img8": {
+        "date": "November 23, 2025",
+        "time": "10:36 pm",
+        "temperature": "49 degrees",
+        "weather": "foggy/mist",
+        "mood": "ominous"
+    }
+}
+
+    
