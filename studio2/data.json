@@ -1,8 +1,9 @@
 
 {
     "img1": {
+        "img": "images/img1.jpg";
         "date": "October 31, 2024",
-        "time": "7:46 am",
+        "time": "7:46 am",s
         "temperature": "53 degrees",
         "weather": "foggy/overcast",
         "mood": "dreary"
