@@ -1,15 +1,16 @@
 
 {
     "img1": {
-        "img": "images/img1.jpg";
+        "img": "images/img1.jpg",
         "date": "October 31, 2024",
-        "time": "7:46 am",s
+        "time": "7:46 am",
         "temperature": "53 degrees",
         "weather": "foggy/overcast",
         "mood": "dreary"
     },
 
     "img2": {
+        "img": "images/img2.jpg",
         "date": "March 13, 2025",
         "time": "11:49 am",
         "temperature": "54 degrees",
@@ -18,6 +19,7 @@
     },
 
     "img3": {
+        "img": "images/img3.jpg",
         "date": "November 24, 2025",
         "time": "1:45 pm",
         "temperature": "50 degrees",
@@ -26,6 +28,7 @@
     },
 
     "img4": {
+        "img": "images/img4.jpg",
         "date": "February 15, 2025",
         "time": "3:17 pm",
         "temperature": "47 degrees",
@@ -34,6 +37,7 @@
     },
 
     "img5": {
+        "img": "images/img5.jpg",
         "date": "January 19, 2026",
         "time": "5:24 pm",
         "temperature": "48 degrees",
@@ -42,6 +46,7 @@
     },
 
     "img6": {
+        "img": "images/img6.jpg",
         "date": "March 12, 2025",
         "time": "6:52 pm",
         "temperature": "51 degrees",
@@ -50,6 +55,7 @@
     },
 
     "img7": {
+        "img": "images/img7.jpg",
         "date": "April 9, 2026",
         "time": "7:33 pm",
         "temperature": "73 degrees",
@@ -58,6 +64,7 @@
     },
 
     "img8": {
+        "img": "images/img8.jpg",
         "date": "November 23, 2025",
         "time": "10:36 pm",
         "temperature": "49 degrees",
