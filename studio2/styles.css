@@ -40,6 +40,7 @@ header p {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
+    background-color: antiquewhite;
 }
 
 #img {
@@ -52,6 +53,7 @@ header p {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px; 
+    min-height: 133px;
 }
 
 #info p {
