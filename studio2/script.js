@@ -13,16 +13,19 @@
 
     //i want the data to populate on click, does the thing for acutally populating the data need to be a separate function - i also don't really understand how to get the data beyond the super basic functions
     //i don't get the global data thing at all 
-    
 
+    // let globalData;
 
     async function getData(){
         const fetchPromise = await fetch('data/data.json');
         const data = await fetchPromise.json();
 
         const keys = Object.keys(data);
+        // globalData = Object.keys(data);
+        
         // console.log(data);
-        console.log(keys);
+        // console.log(keys);
+        // console.log(globalData);
         populate(data);
 
         // document.querySelector('#img-container img').src = data.img2.img;
@@ -30,9 +33,9 @@
 
     function populate(data){
 
-        keys.forEach( function(eachPoint){
+        // keys.forEach( function(eachPoint){
 
-        });
+        // });
 
         for( const tile of tiles){
             tile.addEventListener('click', function(){
@@ -41,6 +44,7 @@
                 // keys.forEach( function(eachPoint){
                 //     myTime.innerHTML = data.point2.time;
                 // })
+
                 // myImg.src = data.point.img;
                 myTime.innerHTML = data.point.time;
                 myDate.innerHTML = data.point.date;
