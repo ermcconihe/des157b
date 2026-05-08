@@ -5,7 +5,6 @@
 }
 
 body {
-    /* background-color: rgb(250, 244, 228); */
     background-color: rgb(255, 234, 209, 1);
 }
 
@@ -19,19 +18,10 @@ h1 {
     font-weight: 400;
 }
 
-/* header p {
-
-} */
-
 #content-container {
     display: flex;
     gap: 20px;
     justify-content: center;
-}
-
-#viewing-area {
-    /* gap: 20px; */
-    /* transition: all 2s; */
 }
 
 #selection-area {
@@ -46,16 +36,16 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    background: linear-gradient(78deg,rgba(246, 227, 223, 1) 0%, rgba(255, 234, 209, 1) 100%);
+    /* background: linear-gradient(78deg,rgba(246, 227, 223, 1) 0%, rgba(255, 234, 209, 1) 100%); */
+    background: linear-gradient(90deg,rgb(200, 191, 216) 0%, rgba(248, 227, 223, 1) 70%, rgba(255, 234, 209, 1) 100%);
     position: relative;
-    /* transition: all 2s; */
 }
 
 #img {
     visibility: hidden;
-    /* transition: all 2s; */
 }
 
+/* text over the image area */
 #description {
     position: absolute;
     font-family: "DM Sans", sans-serif;
@@ -63,21 +53,19 @@ h1 {
     font-style: normal;
     font-size: 1.15em;
     line-height: 1.3em; 
-    /* top: 10px; */
     bottom: 10px;
     left: 10px;
-    /* max-width: 275px; */
 }
 
 #info {
     /* background-color: rgb(168, 159, 184); */
-    background: linear-gradient(90deg,rgba(168, 159, 184, 1) 0%, rgba(248, 227, 223, 1) 70%, rgba(255, 234, 209, 1) 100%);
+    /* background: linear-gradient(90deg,rgba(168, 159, 184, 1) 0%, rgba(248, 227, 223, 1) 70%, rgba(255, 234, 209, 1) 100%); */
+    background: linear-gradient(90deg,rgb(200, 191, 216) 0%, rgba(248, 227, 223, 1) 70%, rgba(255, 234, 209, 1) 100%);
     border-radius: 10px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px; 
     min-height: 133px;
-    /* transition: all 2s; */
 }
 
 #info p {
@@ -85,7 +73,6 @@ h1 {
     font-weight: 500;
     font-style: normal;
     line-height: 1.5em;    
-    /* transition: all 2s; */
 }
 
 #info h2 {
@@ -95,7 +82,6 @@ h1 {
 }
 
 .tiles {
-    /* height: 100px; */
     width: 150px;
     background-color: antiquewhite;
     border-radius: 10px;
@@ -118,13 +104,7 @@ h1 {
     transition: font-size 1s ease;
 }
 
-
-.fade {
-    transition: opacity 2s;
-}
-
 /* background colors */
-
 #point1 {
     /* background-color: rgb(157, 180, 201); */
     /* background: radial-gradient(circle,rgba(219, 240, 255, 1) 10%, rgba(157, 180, 201, 1) 100%); */
@@ -132,7 +112,8 @@ h1 {
 }
 
 #point2 {
-    background-color: rgb(58, 110, 177);
+    /* background-color: rgb(58, 110, 177); */
+    background: radial-gradient(circle,rgba(148, 194, 255, 1) 0%, rgba(119, 164, 222, 1) 26%, rgba(58, 110, 177, 1) 100%);
 }
 
 #point3 {
@@ -141,22 +122,50 @@ h1 {
 }
 
 #point4 {
-    background-color: rgb(233, 213, 98);
+    /* background-color: rgb(233, 213, 98); */
+    background: radial-gradient(circle,rgba(255, 251, 189, 1) 0%, rgba(252, 246, 157, 1) 26%, rgba(223, 213, 98, 1) 100%);
 }
 
 #point5 {
-    background-color: rgb(139, 138, 196);
+    /* background-color: rgb(139, 138, 196); */
+    background: radial-gradient(circle,rgba(207, 207, 255, 1) 0%, rgba(191, 191, 241, 1) 26%, rgba(139, 138, 196, 1) 100%);
 }
 
 #point6 {
-    background-color: rgb(236, 173, 0);
+    /* background-color: rgb(236, 173, 0); */
+    background: radial-gradient(circle,rgba(255, 222, 150, 1) 0%, rgba(255, 206, 103, 1) 26%, rgba(255, 173, 0, 1) 100%);
 }
 
 #point7 {
-    background-color: rgb(216, 115, 89);
+    /* background-color: rgb(216, 115, 89); */
+    background: radial-gradient(circle,rgba(255, 182, 171, 1) 0%, rgba(255, 157, 141, 1) 26%, rgba(255, 115, 89, 1) 100%);
 }
 
 #point8 {
-    background-color: rgb(75, 45, 10);
+    /* background-color: rgb(75, 45, 10); */
+    background: radial-gradient(circle,rgba(158, 93, 24, 1) 0%, rgba(135, 80, 20, 1) 26%, rgba(75, 45, 10, 1) 100%);
     color: aliceblue;
+}
+
+/* footer */
+footer{
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+p a:hover {
+    color: rgb(45, 18, 145);
 }

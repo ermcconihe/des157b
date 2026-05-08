@@ -11,20 +11,7 @@
     const myMood = document.querySelector('#my-mood');
 
     const tiles = document.querySelectorAll('.tiles');
-    const tileTime = document.querySelectorAll('.tiles p');
-    const info = document.querySelector('#info');
     const des = document.querySelector('#description');
-
-    for(const tile of tiles){
-        // tile.addEventListener('click', function(event){
-        //     info.className = 'fade';
-        // });
-
-        // tile.addEventListener('mouseover', function(event){
-        //     tileTime.className = '.grow';
-        // })
-
-    }
 
     async function getData(){
         const fetchPromise = await fetch('data/data.json');
@@ -41,6 +28,8 @@
                 event.preventDefault();
 
                 // console.log(tile.id);
+
+                myImg.classList.toggle('fade-in');
 
                 myImg.src = data[tile.id].img;
                 myImg.style.visibility = 'visible';
