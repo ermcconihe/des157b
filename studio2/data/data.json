@@ -5,7 +5,7 @@
         "date": "October 31, 2024",
         "time": "7:46 am",
         "temperature": "53 degrees",
-        "weather": "foggy/overcast",
+        "weather": "foggy and overcast",
         "mood": "dreary"
     },
 
@@ -32,7 +32,7 @@
         "date": "February 15, 2025",
         "time": "3:17 pm",
         "temperature": "47 degrees",
-        "weather": "rainy/sunny",
+        "weather": "rainy with some sun",
         "mood": "refreshing"
     },
 
@@ -68,7 +68,7 @@
         "date": "November 23, 2025",
         "time": "10:36 pm",
         "temperature": "49 degrees",
-        "weather": "foggy/mist",
+        "weather": "foggy and misty",
         "mood": "ominous"
     }
 }

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    /* background-color: rgb(250, 244, 228); */
+    background-color: rgb(255, 234, 209, 1);
+}
+
 header {
     max-width: 940px;
     margin: auto;
@@ -14,9 +19,9 @@ h1 {
     font-weight: 400;
 }
 
-header p {
+/* header p {
 
-}
+} */
 
 #content-container {
     display: flex;
@@ -26,6 +31,7 @@ header p {
 
 #viewing-area {
     /* gap: 20px; */
+    /* transition: all 2s; */
 }
 
 #selection-area {
@@ -40,20 +46,38 @@ header p {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: antiquewhite;
+    background: linear-gradient(78deg,rgba(246, 227, 223, 1) 0%, rgba(255, 234, 209, 1) 100%);
+    position: relative;
+    /* transition: all 2s; */
 }
 
 #img {
-    
+    visibility: hidden;
+    /* transition: all 2s; */
+}
+
+#description {
+    position: absolute;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.15em;
+    line-height: 1.3em; 
+    /* top: 10px; */
+    bottom: 10px;
+    left: 10px;
+    /* max-width: 275px; */
 }
 
 #info {
-    background-color: antiquewhite;
+    /* background-color: rgb(168, 159, 184); */
+    background: linear-gradient(90deg,rgba(168, 159, 184, 1) 0%, rgba(248, 227, 223, 1) 70%, rgba(255, 234, 209, 1) 100%);
     border-radius: 10px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px; 
     min-height: 133px;
+    /* transition: all 2s; */
 }
 
 #info p {
@@ -61,7 +85,7 @@ header p {
     font-weight: 500;
     font-style: normal;
     line-height: 1.5em;    
-    
+    /* transition: all 2s; */
 }
 
 #info h2 {
@@ -78,6 +102,11 @@ header p {
     position: relative;
 }
 
+.tiles:hover {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
 .tiles p {
     font-family: "Shrikhand", serif;
     font-weight: 400;
@@ -86,4 +115,48 @@ header p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: font-size 1s ease;
+}
+
+
+.fade {
+    transition: opacity 2s;
+}
+
+/* background colors */
+
+#point1 {
+    /* background-color: rgb(157, 180, 201); */
+    /* background: radial-gradient(circle,rgba(219, 240, 255, 1) 10%, rgba(157, 180, 201, 1) 100%); */
+    background: radial-gradient(circle,rgba(219, 240, 255, 1) 0%, rgba(189, 211, 229, 1) 26%, rgba(157, 180, 201, 1) 100%);
+}
+
+#point2 {
+    background-color: rgb(58, 110, 177);
+}
+
+#point3 {
+    /* background-color: rgb(129, 177, 66); */
+    background: radial-gradient(circle,rgba(207, 255, 148, 1) 0%, rgba(177, 222, 126, 1) 27%, rgba(129, 177, 66, 1) 100%);
+}
+
+#point4 {
+    background-color: rgb(233, 213, 98);
+}
+
+#point5 {
+    background-color: rgb(139, 138, 196);
+}
+
+#point6 {
+    background-color: rgb(236, 173, 0);
+}
+
+#point7 {
+    background-color: rgb(216, 115, 89);
+}
+
+#point8 {
+    background-color: rgb(75, 45, 10);
+    color: aliceblue;
 }
