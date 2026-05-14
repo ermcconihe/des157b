@@ -18,8 +18,17 @@
     <!-- Meta tag for mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- animate on scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- type it -->
+     <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+
     <!-- style sheet -->
      <link rel="stylesheet" href="styles.css">
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- script -->
      <script src="script.js" defer></script>
@@ -33,30 +42,35 @@
             <img src="images/bigcabins-narrow.jpg" alt="bigcabins-narrow" width="1200" height="600">
         </div>
 
-        <main>
-            <div>
-                <h1>Kenjockety</h1>
-                <p>Why are you reading this, I don’t have anything important to say in this paragraph. It is just a placeholder. I suggest you go look at the photos, they’re pretty cool and I like them very much. I miss the trees. </p>
+        <div data-aos="flip-down" data-aos-duration="2000">
+            <h1>Welcome to the Cabins</h1>
+        </div>
+        
+
+        <div id="main-content">
+            <div id="text">
+                
+                <h2 id="typing-test"></h2>
+
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <p>Why are you reading this, I don’t have anything important to say in this paragraph. It is just a placeholder. I suggest you go look at the photos, they’re pretty cool and I like them very much. I miss the trees. </p>
+                </div>
+                
             </div>
 
             <div id="side-img">
                 <img src="images/dining.jpg" alt="">
             </div>
-        </main>
+        </div>
         
     </div>
 
-    <header>
-        <h1></h1>
-        
-    </header>
 
-    <div>
-
-    </div>
     
 
     <footer>
+        <p><a href="https://michalsnik.github.io/aos/">animate on scroll</a></p>
+        <p><a href="https://www.typeitjs.com/">type it</a></p>       
         <p><a href="../index.html">portal</a></p>
     </footer>
 
