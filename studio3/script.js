@@ -5,7 +5,7 @@
     AOS.init();
 
     new TypeIt("#typing-test", {
-        strings: "Kenjockety",
+        // strings: "Kenjockety",
         speed: 150,
         waitUntilVisible: true,
         afterComplete: function (instance) {
