@@ -1,0 +1,67 @@
+
+
+
+/* map or main page */
+
+body {
+    /* background-color: antiquewhite; */
+    background-image: url(images/map-draft.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-map {
+    position: relative;
+    height: 700px;
+    width: 1200px;
+    
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+    max-width: 300px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+#map-info {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    max-width: 300px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+#house {
+    position: absolute;
+    left: 35%;
+    top: 20% ;
+
+}
+
+
+/* overlay */
+
+.overlays{
+    position: fixed;
+    z-index: 10;
+    width: 1200px;
+    height: 750px;
+    
+    background-color: rgb(231, 204, 168);
+    
+}
+
+.overlay-offscreen {
+    top: 0;
+    right: -1200px; 
+}
+.overlay-onscreen {
+
+}

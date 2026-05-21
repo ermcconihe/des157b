@@ -70,6 +70,8 @@
         addFriendForm.className = "add-friend-offscreen";
     })
 
+    // this doesn't work for some reason
+
     for( let i=0; i<editBtns.length; i++ ){
         editBtns[i].addEventListener('click', function(event){
             event.preventDefault();
