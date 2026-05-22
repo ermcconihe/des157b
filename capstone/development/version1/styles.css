@@ -63,17 +63,32 @@ h1 {
 .overlays{
     position: fixed;
     z-index: 10;
-    width: 1200px;
-    height: 750px;
-    top: 0;
-    right: -1200px; 
+    /* width: 1200px;
+    height: 500px; */
     background-color: rgb(231, 204, 168);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    
     
 }
 
 .overlay-offscreen {
-    
+    /* top: 0; */
+    /* right: -1200px;  */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
 }
-.overlay-onscreen {
 
+.overlay-onscreen {
+    /* top: 0; */
+    transform: translateX(0);
+}
+
+
+
+/* footer */
+footer {
+    /* position: ; */
 }

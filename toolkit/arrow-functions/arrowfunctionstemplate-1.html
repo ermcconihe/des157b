@@ -25,37 +25,44 @@
     </style>
 </head>
 <body>
-    <h1>Change this H1</h1>
+    <h1>Change the Picture</h1>
 
-    <p>Add a short description of your function, what it does and where you got it. You can pull it from some other project you have, or you can create a function from scratch that does something simple and straight forward. Don't just use one of Bill and Glenda's examples though.</p>
+    <p>I borrowed some of my code from the every picture project in the previous interactive media class. This basically makes a photo fade out on hover. </p>
 
     <h2>Named Function</h2>
     <code>
         <pre>
-            function(parameter){
-                Do something();
+            function changePicture(change){
+                const thisPicture = change.target;
+                thisPicture.className = 'top fadeout';
             }
+            eachTop.addEventListener('mouseover', changePicture);
         </pre>
     </code>
 
     <h2>Function Expression</h2>
     <code>
         <pre>
-            const aVaraiable = function(parameter){
-                Do something();
+            const changePicture = function(change){
+                const thisPicture = change.target;
+                thisPicture.className = 'top fadeout';
             }
+            eachTop.addEventListener('mouseover', changePicture);
         </pre>
     </code>
 
     <h2>Arrow Function</h2>
     <code>
         <pre>
-            const aVaraiable = arrow function...{
+            const changePicture = (change) => {
+                const thisPicture = change.target;
+                thisPicture.className = 'top fadeout'; 
             }
+            eachTop.addEventListener('mouseover', changePicture);
         </pre>
     </code>
 
-    <footer> Your Name </footer>
+    <footer> Emily-Mae McConihe </footer>
     
 </body>
 </html>
