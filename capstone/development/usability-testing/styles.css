@@ -218,3 +218,55 @@ h1 {
 footer {
     /* position: ; */
 }
+
+
+
+/* usability testing overlay */
+
+#overlay {
+    position: absolute;
+    background-color: rgba(124, 84, 39, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color:#fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* overflow-y: scroll; */
+}
+
+#overlay article h2, li, p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
