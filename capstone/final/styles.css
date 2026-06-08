@@ -109,16 +109,7 @@ h1 {
 
 .icons:hover {
     cursor: pointer;
-    /* make an animation or movement when hoverable */
     transform: translateY(2%);
-}
-
-/* this isn't workign */
-.icons:click {
-    cursor: pointer;
-    /* make an animation or movement when hoverable */
-    transform: scale(.5);
-
 }
 
 /* diffuse */
@@ -178,6 +169,10 @@ h1 {
     top: 10px;
     left: 10px;
     cursor: pointer;
+}
+
+.fa-angles-right:hover {
+    transform: translateY(3%);
 }
 
 .fa-circle-info {
@@ -310,7 +305,7 @@ h1 {
 
 .text-img img {
     height: 100%;
-    width: 300;
+    width: 300px;
 }
 
 
