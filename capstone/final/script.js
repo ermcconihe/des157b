@@ -18,50 +18,58 @@
     const macOverlay = document.querySelector('#mac-overlay');
     const backArrows = document.querySelectorAll('.fa-solid');
 
-    const diffuse = document.querySelector('blur-overlay');
+    const diffuse = document.querySelector('#blur-overlay');
+
+    const topImages = document.querySelectorAll('.top');
 
 
     creek.addEventListener('click', function(event){
         console.log('click');
         creekOverlay.className = "overlay-onscreen";
-        creek.src = "images/creek-clicked.png";
-        diffuse.className = ""
+        creek.src = "images/creek-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     tent.addEventListener('click', function(event){
         console.log('click');
         tentOverlay.className = "overlay-onscreen";
-        tent.src = "images/tent-clicked.png";
+        tent.src = "images/tent-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     deer.addEventListener('click', function(event){
         console.log('click');
         deerOverlay.className = "overlay-onscreen";
-        deer.src = "images/deer-clicked.png";
+        deer.src = "images/deer-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     stump.addEventListener('click', function(event){
         console.log('click');
         stumpOverlay.className = "overlay-onscreen";
-        stump.src = "images/stump-clicked.png";
+        stump.src = "images/stump-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     stove.addEventListener('click', function(event){
         console.log('click');
         stoveOverlay.className = "overlay-onscreen";
-        stove.src = "images/stove-clicked.png";
+        stove.src = "images/stove-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     swing.addEventListener('click', function(event){
         console.log('click');
         swingOverlay.className = "overlay-onscreen";
-        swing.src = "images/swing-clicked.png";
+        swing.src = "images/swing-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     mac.addEventListener('click', function(event){
         console.log('click');
         macOverlay.className = "overlay-onscreen";
-        mac.src = "images/mac-clicked.png";
+        mac.src = "images/mac-clicked.svg";
+        diffuse.className = ".visible"
     });
 
     for (const arrow of backArrows){
@@ -74,8 +82,27 @@
             stoveOverlay.className = "overlay-offscreen";
             swingOverlay.className = "overlay-offscreen";
             macOverlay.className = "overlay-offscreen";
+            diffuse.className = "invisible"
         });
     }
+
+    for( const eachTop of topImages){
+        eachTop.addEventListener( 'mouseover', function changePicture(event){
+            const thisPicture = event.target;
+            //console.log(thisPicture.id);
+            thisPicture.className = 'top fadeout';
+
+        } );
+
+        eachTop.addEventListener( 'mouseout', function(event){
+            const thisPicture = event.target;
+            //console.log(thisPicture.id);
+            thisPicture.className = 'top fadein';
+
+        } );
+    }
+
+    
     
 
 

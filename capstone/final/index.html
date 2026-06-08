@@ -32,32 +32,33 @@
 
     <div id="main-map">
         <div id="map-area">
-            <img src="images/map.png" id="map" alt="map" width="1200">
+            <img src="images/map.svg" id="map" alt="map" width="1200">
 
-            <img src="images/creek.png"  class="icons" id="creek" alt="creek" width="100">
-            <img src="images/tent.png"  class="icons" id="tent" alt="tent" width="100">
-            <img src="images/deer.png"  class="icons" id="deer" alt="deer" width="100">
-            <img src="images/stump.png" id="stump" class="icons" alt="stump" width="100">
-            <img src="images/stove.png" id="stove" class="icons" alt="stove" width="100">
-            <img src="images/swing.png" id="swing" class="icons" alt="swing" width="100">
-            <img src="images/mac.png" id="mac" class="icons" alt="mac" width="100">
+            <img src="images/creek.svg"  class="icons" id="creek" alt="creek" width="100">
+            <img src="images/tent.svg"  class="icons" id="tent" alt="tent" width="100">
+            <img src="images/deer.svg"  class="icons" id="deer" alt="deer" width="100">
+            <img src="images/stump.svg" id="stump" class="icons" alt="stump" width="100">
+            <img src="images/stove.svg" id="stove" class="icons" alt="stove" width="100">
+            <img src="images/swing.svg" id="swing" class="icons" alt="swing" width="100">
+            <img src="images/mac.svg" id="mac" class="icons" alt="mac" width="100">
+
+            <!-- <div class="hotspot" >
+                <span class="tooltip-text">dining cabin</span>
+            </div> -->
 
         </div>
         
 
         <h1>welcome to the cabins</h1>
-        <p id="map-info">click around the points of interest to explore, what will you discover?</p>
+        <p id="map-info">click around, what <br> will you discover?</p>
 
-
-    </div>
-
-    <div id="blur-overlay" class="">
-
-
+        <i class="fa-solid fa-circle-info"></i>
 
     </div>
 
-    <!-- class="overlays"  -->
+    <div id="blur-overlay" class="invisible"></div>
+
+    <!-- the creek  -->
     <div id="creek-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -67,13 +68,19 @@
 
         <div class="overlay-content">
             
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
         </div>
 
     </div>
 
+
+    <!-- the tent -->
     <div id="tent-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -82,13 +89,19 @@
         
 
         <div class="overlay-content">
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
-            <img src="images/k001beforebeginning copy.jpg" alt="before" width="600">
+            <p>I remember my first night attempting to sleep out in the tent. I was up at Kenjockety with one of my best friends. For some reason I really wanted to sleep out there. Close friends of the family had done so quite often and I was probably a little jealous, it seemed fun at the time. But my fear got the better of me. Being out there while it was dark was terrifying. I have always been a bit scared of the woods at night. There’s practically no light because of how dense the canopy can get and don’t get me started on the noises! We ended up back inside that night fortunately.</p>
+
+            <p>But I did actually sleep out there with my cousins eventually. The three of us in the tent was a much better experience and Carl even joined us one year. It was cold in the mornings but that was probably the best part. Waking up with the light and being able to trudge over to the dining cabin for breakfast. As an adult I feel a sense of need to get dressed for breakfast now, but long for the innocence of being able to be bundled up and comfortable in the warm dining cabin. </p>
+            
+            <p>I am grateful though that I never have to sleep on the deck, especially with all the mosquitos. My dad, his siblings and many others have all told me how they grew up sleeping on either the deck of the main cabin or Mac’s cabin. I don’t envy them. Don’t get me wrong, it sounds fun but just not for me.</p>
+
+            <p>It’s been a long time since I slept out in the tent and probably an equal amount of time since it was last put up. The past few years have been a bit different, quieter in a way. I feel like all the family members who came up during the summer usually, no longer do. It’s strange. Something has shifted and I don’t know what. Maybe that is the part of getting older that no one tells you about. You become more aware of how things used to be and questioning why they changed.</p>
         </div>
         
     </div>
 
+
+    <!-- the main cabin -->
     <div id="deer-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -97,25 +110,61 @@
         
 
         <div class="overlay-content">
+
+            <p></p>
+
+            <div class="images-line">
+                <img src="images/interior1.jpg" alt="interior1" width="300">
+                <img src="images/interior2.jpg" alt="interior2" width="300">
+            </div>
+            
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
             
         </div>
         
     </div>
 
+
+    <!-- the stump and logging -->
     <div id="stump-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
             <h2>logging the past</h2>
         </div>
 
-        
-
         <div class="overlay-content">
+
+            <p>I look very fondly at this stump as an adult and marvel and how small it feels. As a child I would play in this with my cousins, Isabelle and Carl. We all crammed in there, covered in dirt and some soot from the charred sides among the moss. We decorated our little work spaces with nature’s collectibles: twigs, bark, stones and much more. I don’t know exactly when we stopped playing in it. The change must have been gradual, we grow up after all.</p>
+
+            <div class="layer-cells">
+                <img class="bottom" src="images/new-log.jpg" alt="new-stump" width="600"> 
+                <img class="top" src="images/old-log.jpg" alt="old-stump" width="600"> 
+            </div>
+            
+
+            <p>I don’t actually know if this stump is remnants of logging or a fire, or both! There have been many fires that have swept through the area in the past 200 years, whether natural or caused by the mills. There’s evidence on many of the trees of the 1890’s fire. One such tree has an interior that is like a little cave to crawl in. The tree is still thriving which is surprising, even with two holes.</p>
+
+            <p>Walking through part of the Tract, you can see many remnants of logged stumps and large ones too. Back in the mid to late 1800’s, the Page Saw Mill ran logging operations in this area. The remains of the mill are gone, but there is evidence in hidden areas of what happened long ago. </p>
+
+            <p>Redwood was a prized timber and there was the demand. Multiple companies set up mills, logged and then moved on, making their way through the forest. But as the forest grew smaller and the concern for preservation grew larger. Not too far south, the California Redwood Park (eventually Big Basin Redwoods State Park) became a reality in 1902. </p>
+
+            <img src="images/hauling-logs.jpg" alt="hauling-logs" width="600">
+
+            <p>As the mill companies got no more use from the land they already logged, they began selling it. Bill Middleton, became one of many people interested in living in this remote new area and began collecting parcels between 1917 and 1922, which he started selling soon after.</p>
+
+        
             
         </div>
         
     </div>
 
+
+    <!-- the kitchen/stove -->
     <div id="stove-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -124,11 +173,26 @@
         
 
         <div class="overlay-content">
+
+            <p>They call the kitchen the heart of the home. I would say the dining cabin is the heart of Kenjockety. The kitchen is always too warm in the evenings and crowded, but it is where all the action happens. Dinner is often an ordeal, especially when you are serving large groups of the family.</p>
+
+            <img src="images/airy-kitchen.jpg" alt="airy-kitchen" width="600">
+
+            <p>As a kid, there were some years where there would easily be fifteen of us up there and dinner would be done in shifts. The kids and then the adults. But when we were all there together, it was loud. There is no other experience like sitting in that cabin eating and talking while watching the forest get darker as the sun dips further between the trees and mountains. </p>
+
+            <img src="images/cabin-night.jpg" alt="cabin-night" width="600">
+
+            <p>Every year is a different experience and it makes me wonder what the future will hold. Things have to be changed about this place, especially with its age. Only a few years ago the wood-burning stove that we often cook on had to be replaced. We have more small appliances that the outlets don’t have the correct amperage for. The large appliances need to be replaced eventually and so do the roofs. It still has its charm, but how long will it be before it is unrecognizable? How can a place filled with history and rustic charm keep up with modern methods? Or does it even need to change?</p>
+
+            <p></p>
+
             
         </div>
         
     </div>
 
+
+    <!-- the swing -->
     <div id="swing-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -137,11 +201,27 @@
         
 
         <div class="overlay-content">
+
+            <p>Other than actually being up at the cabins, the drive up is perhaps the most memorable part for me every year. As a child I would always look forward to making the trip with my dad. Those two hours were always so fun and the views were absolutely the best. Especially being on Skyline and being able to see the ocean on one side and the Bay on the other.</p>
+
+            <img src="images/drive-up.jpg" alt="drive-up" width="600">
+
+            <p>Once I started making the drive myself, I started noticing the details more. There is something special once you hit the woods as you climb the mountains, the smell. The air is cleaner and cooler. It’s another world in those hills. Quieter and calmer. Although the winding roads might be the only scary part, especially as it narrows along cliff edges. </p>
+
+            <p>Middleton Tract is small and remote. It’s just one turn off right before a state park. Largely unassuming, but there lies a wealth of history, especially for my family. I am traveling the same exact route we have gone for 100 years. I forget that often, the age of this place. Even though I am reminded by names on the sign of those who I have never met. </p>
+
+            <img src="images/sign.jpg" alt="sign" width="600">
+
+            <p>That is my greeting every summer while making the final turn. Turning down the dirt driveway and seeing the swing, then the cabins. It never gets old.</p>
+
+            <img src="images/cabins-narrow.jpg" alt="cabins-narrow" width="600">
             
         </div>
         
     </div>
 
+
+    <!-- mac's cabin -->
     <div id="mac-overlay" class="overlay-offscreen">
         <div class="overlay-header">
             <i class="fa-solid fa-angles-right"></i>
@@ -150,6 +230,20 @@
         
 
         <div class="overlay-content">
+
+            <p>What we now call Mac’s cabin is the first cabin that ever was built, likely in 1924. Embarrassingly, I thought it was called Max’s cabins until very recently. I don’t know why I thought that but it is hard to connect fully with the names of people you have never met. Before it was christened with this name, the cabins housed other members of the family, the Watts. In the process of building that first cabins, tent cabins and other temporary structures were set up to house the multiple families. Eventually the Watts moved on from the area and another resident took up the space. </p>
+
+            <img src="images/mac.jpg" alt="macs-cabins" width="600">
+
+            <p>Jim McLachlan, or otherwise known as Mac, became a sort of caretaker for the property and stayed year-round. Eventually he left but the name stuck and has till this day. Names are important here and every cabin has one. There’s obviously Mac’s, the Dining cabin, the Main cabin, Bill and Susan’s cabin and the Honeymoon cabin. That last one is a little farther away from the rest.</p>
+
+            <p>But perhaps the most important bit is the actual name of the place, Kenjockety. A loose translation of this Indigenous name comes out to ‘away from the crowd.’ It’s well fitting. And it’s exactly why I like coming up here, it's quiet and more peaceful. I am able to turn off my connection to the outside world for a bit and just exist in nature. It is also the same exact reason why my ancestors bought this place in 1924.</p>
+
+            <p>Meta and William Leicter were looking for a summer residence to escape San Francisco. Through a close friend they heard of a Bill Middleton, who was selling parcels of land in a recovering second growth forest. They jumped at the opportunity and immediately got to work.</p>
+            
+            <img src="images/1924.jpg" alt="1924" width="600">
+
+            <p>William is on the far left, then Meta, their two daughters, Mae (Edwards) and Paula Watt along with Paula’s little girl, Margaret. The rest are other members of the family and a couple friends all down at the creek. My dad carries the William Leichter name as his first and middle name. And I carry Mae’s name as a part of my first name along with my cousin Isabelle, except as a middle name. Technically I met my great grandmother as a baby, but still greatly mourn the loss of someone I wish I had gotten the chance to know. </p>
             
         </div>
         
