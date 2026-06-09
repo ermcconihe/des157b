@@ -102,6 +102,11 @@
         } );
     }
 
+
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('#overlay').className = 'hidden';
+    });
+
     
     
 
